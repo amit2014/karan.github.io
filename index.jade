@@ -19,37 +19,44 @@ html(lang="en")
                     a(href="#top", onclick="ga('send', 'event', 'navbar', 'click', 'Top');")
                         li
                             i.fa.fa-chevron-circle-up
-                            | Top 
+                            | Top
                     br
                     a(href="#about", onclick="ga('send', 'event', 'navbar', 'click', 'About');")
                         li
                             i.fa.fa-user
-                            | About 
+                            | About
                     a(href="#work", onclick="ga('send', 'event', 'navbar', 'click', 'Work');")
                         li
                             i.fa.fa-users
-                            | Work 
-                    a(href="#projects", onclick="ga('send', 'event', 'navbar', 'click', 'Projects');")    
+                            | Work
+                    a(href="#projects", onclick="ga('send', 'event', 'navbar', 'click', 'Projects');")
                         li
                             i.fa.fa-code
-                            | Projects 
+                            | Projects
                     a.hackathons-nav(href="#hackathons", target="_blank", onclick="ga('send', 'event', 'navbar', 'click', 'Hackathons');")
                         li
                             i.fa.fa-coffee
-                            | Hackathons 
+                            | Hackathons
                     br
                     a(href="/Karan.Goel.Resume.pdf", target="_blank", onclick="ga('send', 'event', 'navbar', 'click', 'Resume');")
                         li
                             i.fa.fa-file
-                            | Resume 
+                            | Resume
                     a(href="http://karan.github.io", target="_blank", onclick="ga('send', 'event', 'navbar', 'click', 'Blog');")
                         li
                             i.fa.fa-rss
-                            | Blog 
+                            | Blog
 
         section.top#top
-            .bg
-                .overlay
+            //- .bg
+            //-     .overlay
+            .parallax
+                .parallax_layer#layer-1
+                .parallax_layer#layer-2
+                .parallax_layer#layer-3
+                .parallax_layer#layer-4
+                .parallax_layer#layer-5
+                .parallax_layer#layer-6
             .brand
                 h1 Hello, I'm Karan
                 h2 I make great ideas happen

@@ -169,8 +169,42 @@ section {
     overflow: hidden;
 }
 
+#parallax {
+    position: relative;
+    height: 100%;
+    z-index: 10;
+}
+
+.parallax_layer {
+    top: 100px;
+    background-position: bottom center;
+    background-size: 1920px 768px;
+    background-repeat: repeat-x;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#layer-1 { background-image: url("/images/bg/parallax1.png"); }
+#layer-2 { background-image: url("/images/bg/parallax2.png"); }
+#layer-3 { background-image: url("/images/bg/parallax3.png"); }
+#layer-4 { background-image: url("/images/bg/parallax4.png"); }
+#layer-5 { background-image: url("/images/bg/parallax5.png"); }
+#layer-6 {
+    background-color: transparent;
+    background-image: url("/images/bg/parallax6.png");
+    background-position: center top, center bottom;
+    background-repeat: no-repeat, no-repeat;
+    top: 170px;
+}
+
 .bg {
-    width : 100%; 
+    width : 100%;
     height : 100%;
     display : block;
     opacity : 1;
@@ -225,7 +259,7 @@ section {
 }
 
 @-webkit-keyframes arrows {
-    0%, 20%, 50%, 80%, 100% {bottom: 10px;} 
+    0%, 20%, 50%, 80%, 100% {bottom: 10px;}
     40% {bottom: 30px;}
     60% {bottom: 15px;}
 }
