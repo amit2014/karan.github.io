@@ -106,6 +106,10 @@ section {
   padding: 0 10px;
 }
 
+.work-date {
+  float:right;
+}
+
 .intro {
   font-size: 3em;
   border-bottom: 5px solid #444;
